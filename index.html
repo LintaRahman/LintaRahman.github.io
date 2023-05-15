@@ -1,97 +1,419 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" contents="IE=edge">
-        <!-- <link rel="shortcut icon" href="images/logo-modified.png" type="image/x-icon"> -->
-        <meta name="viewport" content="with=device-width, intial-scale=1.0"> 
-        <title>Linta Rahman Profile</title>
-        <link rel="stylesheet" href="style.css">
-        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    </head>
-    <body>
-        <div class="hero">
-            <nav>
-                <img src="images/ProfPic.jpg" class="logo" alt="">
-                <ul>
-                    <li><a href="HOME" ></a></li>
-                    <li><a href="ABOUT" ></a></li>
-                    <li><a href="PORTFOLIO" ></a></li>
-                    <li><a href="PROJECTS" ></a></li>
-                    <li><a href="CONTACT" ></a></li>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linta Rahman's Portfolio Website</title>
 
-                </ul>
-            </nav>
-            <div class="detel">
-                <h1>I'm Linta Rahman</h1>
-                <p>This is my official portfolio website, 
-                    <br>where you can find out more about my PROJECTS
-                    <br> and details on how to contact me.
-                </p>
-                <a href="#">LEARN MORE</a>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="navbar.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#education">EXPERIENCES</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#services">SERVICES</a>
+            <!-- <a href="#portfolio">PORTFOLIO</a> -->
+            <a href="#achievements">ACHIEVEMENTS</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+        <!-- <nav>
+            <ul>
+                <li class="logo"><a href="index.html" class="logo">
+                    <img src="images/profpic3.png" alt="">
+                    <span class="nav-item">LINTA</span></a>
+                </li>
+                <li><a href="#home" >
+                    <i class="fas fa-home"></i>
+                    <span class="nav-item">HOME</span></a>
+                </li>
+                <li><a href="#about" >
+                    <i class="fas fa-user"></i>
+                    <span class="nav-item">ABOUT</span></a>
+                </li>
+                <li><a href="" >
+                    <i class="fas fa-lightbulb"></i>
+                    <span class="nav-item">EXPERIENCE</span></a>
+                </li>
+                <li><a href="" >
+                    <i class="fas fa-user"></i>
+                    <span class="nav-item">PROJECTS</span></a>
+                </li>
+                <li><a href="#achievements" >
+                    <i class="fas fa-star"></i>
+                    <span class="nav-item">ACHIEVEMENTS</span></a>
+                </li>
+                <li><a href="#contact" >
+                    <i class="fas fa-paper-plane"></i>
+                    <span class="nav-item">CONTACT</span></a>
+                </li>
+                <li><i class="bx bx-moon" id="darkMode-icon"></i></li>
+                 <li class="toggle"><span class="bars"></span></li> 
+            </ul>
+            
+        </nav> -->
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    
+
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Linta Rahman</h1>
+            <p>I am a Full Stack Developer</p>
+
+            <div class="social-media">
+                <a href="mailto:lintarahman2212@gmail.com" target="_blank"><i class='bx bx-envelope'></i></a>
+                <a href="https://www.linkedin.com/in/linta-rahman/"  target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#"  target="_blank"><i class='bx bxl-instagram'  ></i></a>
+                <a href="https://github.com/LintaRahman/"  target="_blank"><i class='bx bxl-github' ></i></a>
             </div>
-            <div class="images">
-                <img src="images/shape1.png" alt="" class="shape">
-                <img src="images/profpic3.png" alt="" class="profpic">
-            </div>
+
+            <a href="docs/CV.pdf" class="btn" target="_blank">Download CV</a>
         </div>
 
-        <footer>
-            <div class="waves">
-                <div class="wave" id="wave1"></div>
-                <div class="wave" id="wave2"></div>
-                <div class="wave" id="wave3"></div>
-                <div class="wave" id="wave4"></div>
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class="bx bx-code-alt"></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class="bx bx-paint"></i>
+                    <h3>Calligrapher</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class="bx bx-chalkboard"></i>
+                    <h3>Online Tutor</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <i class="bx bx-chart"></i>
+                    <h3>Business Owner</h3>
+                </div>
+
+                <div class="circle"></div>
             </div>
-            <ul class="social_icon">
-                <li><a href="mailto:lintsart@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></li>
-                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                <li><a href="https://www.linkedin.com/in/linta-rahman/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                <li><a href="https://instagram.com/lints_art?igshid=YmMyMTA2M2Y="><ion-icon name="logo-instagram"></ion-icon></a></li>
-            </ul>
-            <ul class="menu">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="products.html">SHOP</a></li>
-                <li><a href="about-us.html">ABOUT US</a></li>
-                <li><a href="contact-us.html">CONTACT US</a></li>
-            </ul>
-            <p>	&copy; 2022 | All rights reserved</p>
-        </footer>
-        <script>
-            var navLinks= document.getElementById("navLinks");
-            function showMenu(){
-                navLinks.style.right="0";
-            }
-            function hideMenu(){
-                navLinks.style.right="-200px";
-            }
-        </script>
-        <script>
-            let slideIndex = 0;
-            showSlides();
+
+            <div class="overlay"></div>
+        </div>
+        <div class="home-img">
+            <img src="images/profpic3.png" alt="" >
+        </div>
+    </section>
+
+    
+    <section class="about" id="about">
+        <div class="about-img">
+            <!-- <img src="images/shape1.png" alt="" class="shape"> -->
+            <img src="images/profpic3.png" alt="" class="profpic">
+        </div>
+        
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Hi, I'm here to help with you next project!</h3>
+            <p>Motivated Computer Science student, bringing problem solving skills and experience to support the design, 
+                testing, deployment and maintenance of software within a thriving business. 
+                I look forward to take on a project and apply my skills to solve a new challenge.</p>
+            <!-- <a href="" class="btn">Read More</a> -->
+        </div>
+    </section>
+
+
+    <section class="education" id="education">
+        <h2 class="heading">My <span>Journey</span></h2>
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Education</h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="details"><i class='bx bxs-location-plus'></i> University College London<span><i class='bx bxs-calendar'></i> 2020 - 2024</span></div>
+                            <h3>MEng Computer Science, UCL</h3>
+                            <p>Studying computer science degree at UCL.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="details"><i class='bx bxs-location-plus'></i> University College London<span><i class='bx bxs-calendar'></i> 2020 - 2024</span></div>
+                            <h3>A-Levels</h3>
+                            <p>Mathematics A* -  Chemistry A* -  Bengali A* - <br> English Literature A</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="details"><i class='bx bxs-location-plus'></i> University College London<span><i class='bx bxs-calendar'></i> 2020 - 2024</span></div>
+                            <h3>GCSE</h3>
+                            <p>Grades: 9 9 8 8 7-7 A* A* A</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-column">
+                <h3 class="title">Experience</h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="details"><i class='bx bxs-location-plus'></i> University College London<span><i class='bx bxs-calendar'></i> 2020 - 2024</span></div>
+                            <h3>MEng Computer Science, UCL</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur porro eaque inventore eum cupiditate tempore excepturi maiores totam veritatis! Delectus, tempora.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="details"><i class='bx bxs-location-plus'></i> University College London<span><i class='bx bxs-calendar'></i> 2020 - 2024</span></div>
+                            <h3>MEng Computer Science, UCL</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur porro eaque inventore eum cupiditate tempore excepturi maiores totam veritatis! Delectus, tempora.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="details"><i class='bx bxs-location-plus'></i> University College London<span><i class='bx bxs-calendar'></i> 2020 - 2024</span></div>
+                            <h3>MEng Computer Science, UCL</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur porro eaque inventore eum cupiditate tempore excepturi maiores totam veritatis! Delectus, tempora.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
-            function showSlides() {
-              let i;
-              let slides = document.getElementsByClassName("mySlides");
-              let dots = document.getElementsByClassName("dot");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
-              slideIndex++;
-              if (slideIndex > slides.length) {slideIndex = 1}    
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-              setTimeout(showSlides, 2000); // Change image every 2 seconds
-            }
-            </script>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-row">
+            <div class="skills-column">
+                <h3 class="title">Programming Skills</h3>
+                
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3><i class="bx bxl-python"></i>Python <span> 90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3><i class="bx bxl-java"></i>Java <span> 80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        
+                        <div class="progress">
+                            <h3><i class="bx bxs-file-html"></i>HTML <span> 90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3><i class="bx bxs-file-css"></i>CSS <span> 70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3><i class="bx bxl-javascript"></i>Javascript <span> 60%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3><i class="bx bxs-file-c"></i>C <span> 50%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-column">
+                <h3 class="title">Professional Skills</h3>
+                
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Business Management <span> 80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Graphics Design <span> 95%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        
+                        <div class="progress">
+                            <h3>Web Development <span> 70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>CSS <span> 70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Javascript <span> 60%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>C <span> 50%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+    
+        <div class="services-container">
+            <div class="services-box">
+                <i class="bx bx-code-alt"></i>
+                <h3> Web Development</h3>
+                <p>Self taught front-end developer.</p>
+                <a href="https://github.com/LintaRahman/"  target="_blank" class="btn">View Projects </a>
+            </div>
+            <div class="services-box">
+                <i class="bx bx-paint"></i>
+                <h3> Calligrapher</h3>
+                <p>Founder of Lints_Art. A small business selling hand-made personalised canvases.  </p>
+                <a href="https://www.instagram.com/lints_art/?hl=en-gb" class="btn" target="_blank">See More </a>
+            </div>
+            <div class="services-box">
+                <i class="bx bx-chalkboard"></i>
+                <h3> Online Tutor</h3>
+                <p>Tutoring GCSE Maths to students.</p>
+                <a href="https://www.mytutor.co.uk/view-tutors/" target="_blank" class="btn">See profile</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">My <span>Portfolio</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/profpic3.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquid mollitia aut, quasi facilis nesciunt quis eius! Rem nulla cum libero totam!
+                        </p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/profpic3.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquid mollitia aut, quasi facilis nesciunt quis eius! Rem nulla cum libero totam!
+                        </p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/profpic3.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquid mollitia aut, quasi facilis nesciunt quis eius! Rem nulla cum libero totam!
+                        </p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
             
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-            </body>
+        </div>
+   </section>
+
+   <section class="achievements-container" id="achievements">
+        <h2 class="heading">My <span>Achievements</span></h2>
+        <div class="achievements-wrapper">
+            <div class="achievements-box mySwiper">
+                <div class="achievements-content swiper-wrapper">
+                    <div class="achievements-slide swiper-slide">
+                        <img src="images/Hackathon.jpg" alt="">
+                        <h3>Avanade STEM Scholar 2020</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla debitis obcaecati tempore! Harum tempore praesentium animi itaque optio quasi voluptas ad natus!</p>
+
+                    </div>
+                    <div class="achievements-slide swiper-slide">
+                        <img src="images/Hackathon.jpg" alt="">
+                        <a href="https://www.ucl.ac.uk/computer-science/news/2022/jun/ucl-computer-science-coding-curriculum-hackathon-2022-winners-announced" target="_blank">
+                        <h3>UCL Coding Curriculum Hackathon Winner 2022</h3></a>
+                        <p>First place winner out of 30 students in the UCL Coding Curriculum Hackathon judged by the Alan Turing institute, aimed at designing technology to inspire students towards computer science. </p>
+                        
+                    </div>
+                    <div class="achievements-slide swiper-slide">
+                        <img src="images/IWED.png" alt="">
+                        <a href="https://www.ucl.ac.uk/computer-science/news/2022/jun/international-women-engineering-day-linta-rahman-avanade-scholar" target="_blank">
+                        <h3>International Women in Engineering Day UCL 2022</h3></a>
+                        <p>Chosen to be spotlight for International Women in Engineering Day at UCL 2022 as an Avanade STEM Scholar.  </p>
+                        
+                    </div>
+                    <div class="achievements-slide swiper-slide">
+                        <img src="images/head-girl.png" alt="">
+                        <h3>Head Girl at Madani Girls School 2018</h3>
+                        <p>Nominated Head Girl in secondary school and Prefect in sixth form, I took lead as student ambassador in various events in my institution.</p>
+
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+   </section>
+
+   <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form id="contact-form" method="post" action="contact-form.php">
+            <div class="input-box">
+                <input name="name" type="text" placeholder="Full Name">
+                <input name="email" type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input name="phonenumber" type="number" placeholder="Mobile Number">
+                <input name="subject" type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+   </section>
+
+   <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright © 2023 <span>Achievements</span>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+   </footer>
+
+   <script src="https://unpkg.com/scrollreveal"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
 </html>
