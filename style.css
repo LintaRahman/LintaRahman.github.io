@@ -520,6 +520,9 @@ span{
 .skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span{
     width: 50%;
 }
+.skills-column:nth-child(1) .skills-content .progress:nth-child(7) .bar span{
+    width: 35%;
+}
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span{
     width: 70%;
@@ -882,6 +885,7 @@ span{
     .home .profession-container .overlay{
         right: -9rem;
     }
+    
 }
 
 @media (max-width: 1024px) {
@@ -1059,7 +1063,7 @@ span{
 
     .home .profession-container .overlay{
         position: fixed;
-        top: 100rem;
+        top: 70rem;
         left:50%;
         right:0;
         transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
