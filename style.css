@@ -1098,6 +1098,16 @@ span{
 
     .achievements-content .achievements-slide{
         padding: 3rem 2rem;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        flex-direction: column;
+        background: var(--bg-color);
+        border-radius: 2rem;
+        box-shadow: 0 .1rem .5rem var(--shadow-color) ;
+        /* padding: 3rem 5rem; */
+        border-top: .8rem solid var(--main-color);
+        border-bottom: .8rem solid var(--main-color);
     }
 
     .achievements-box .swiper-button-next,
